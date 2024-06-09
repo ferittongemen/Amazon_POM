@@ -40,7 +40,6 @@ class SearchResultsPage(BasePage):
             EC.element_to_be_clickable((By.ID, SearchResultsLocators.LISTEYE_EKLE_BUTTON_DROPDOWN))
         )
         list_button_dropdown.click()
-
         time.sleep(5)
         actions = ActionChains(self.driver)
         for _ in range(3):
